@@ -11,12 +11,51 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container back-drop">
+        <div class="row">
+            <div class="header col-12">
+                <h1 class="display-4 ml-3 pl-2" id="page-logo">STAR WARS: Cantina Brawl Edition!</h1>    
+            </div>
+        </div>
+    </div>
+    <div class="container m-3">
+        <div class="row m-2" id="pickYourChar">
+            <div class="col-sm-2 bg-light border border-info fighter" id="luke">
+                <span>Luke Skywalker</span>
+                <span>HP:</span>
+            </div>
+            <div class="col-sm-2 bg-light border border-info fighter" id="han">
+                <span>Han Solo</span>
+                <span>HP:</span>
+            </div>
+            <div class="col-sm-2 bg-light border border-info fighter" id="obi">
+                <span>Obi-Wan Kenobi</span>
+                <span>HP:</span>
+            </div>
+            <div class="col-sm-2 bg-light border border-info fighter" id="greedo">
+                <span>Greedo</span>
+                <span>HP:</span>
+            </div>
+            <div class="col-sm-2 bg-light border border-info fighter" id="evazan">
+                <span>Doctor Evazan</span>
+                <span>HP:</span>
+            </div>
+            <div class="col-sm-2 bg-light border border-info fighter" id="ponda">
+                <span>Ponda Baba</span>
+                <span>HP:</span>
+            </div>
+            <h2 class="float-none back-drop p-2" id="pick-fighter">Pick A Fighter!!</h2>
+        </div>
+        <div class="row" id="battle-ground">
+            <div class="col-md-4 m-3" id="your-char"></div>
+            <div class="col-md-4 m-3" id="enemy-char"></div>
 
-    <!-- useful link on moving objects with jQuery: 
-        https://www.elated.com/jquery-removing-replacing-moving-elements/
-    -->
-    
+        </div>
+    </div>
+    <!-- useful link on moving objects with jQuery:
+        https://www.elated.com/jquery-removing-replacing-moving-elements/ 
+        -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script> 
 </body>
 </html>
