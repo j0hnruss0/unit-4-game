@@ -8,49 +8,61 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>CANTINA BRAWL!!</title>
 </head>
 <body>
-    <div class="container back-drop">
+    <div class="back-drop">
         <div class="row">
             <div class="header col-12">
                 <h1 class="display-4 ml-3 pl-2" id="page-logo">STAR WARS: Cantina Brawl Edition!</h1>    
             </div>
         </div>
     </div>
-    <div class="container m-3">
+    <div class="container d-flex flex-column m-3">
         <div class="row m-2" id="pickYourChar">
             <div class="col-sm-2 bg-light border border-info fighter" id="luke">
-                <span>Luke Skywalker</span>
-                <span>HP:</span>
+                <p>Luke Skywalker</p>
+                <img src="assets/images/luke-thumb.jpg" class="img-thumbnail" alt="Missing-Luke">
+                <p>HP: <span id="luke-stat"></span></p>
             </div>
             <div class="col-sm-2 bg-light border border-info fighter" id="han">
-                <span>Han Solo</span>
-                <span>HP:</span>
+                <p>Han Solo</p>
+                <img src="assets/images/han-thumb.jpg" class="img-thumbnail" alt="Missing-Han">
+                <p>HP: <span id="han-stat"></span></p>
             </div>
             <div class="col-sm-2 bg-light border border-info fighter" id="obi">
-                <span>Obi-Wan Kenobi</span>
-                <span>HP:</span>
+                <p>Obi-Wan Kenobi</p>
+                <img src="assets/images/obi-wan-thumb.jpeg" class="img-thumbnail" alt="Missing-Obi">
+                <p>HP: <span id="obi-stat"></span></p>
             </div>
             <div class="col-sm-2 bg-light border border-info fighter" id="greedo">
-                <span>Greedo</span>
-                <span>HP:</span>
+                <p>Greedo</p>
+                <img src="assets/images/greedo-thumb.jpg" class="img-thumbnail" alt="Missing-Greedo">
+                <p>HP: <span id="greedo-stat"></span></p>
             </div>
             <div class="col-sm-2 bg-light border border-info fighter" id="evazan">
-                <span>Doctor Evazan</span>
-                <span>HP:</span>
+                <p>Doctor Evazan</p>
+                <img src="assets/images/evazan-thumb.jpg" class="img-thumbnail" alt="Missing-Doc">
+                <p>HP: <span id="evazan-stat"></span></p>
             </div>
             <div class="col-sm-2 bg-light border border-info fighter" id="ponda">
-                <span>Ponda Baba</span>
-                <span>HP:</span>
+                <p>Ponda Baba</p>
+                <img src="assets/images/ponda-thumb.jpg" class="img-thumbnail" alt="Missing-Ponda">
+                <p>HP: <span id="ponda-stat"></span></p>
             </div>
             <h2 class="float-none back-drop p-2" id="pick-fighter">Pick A Fighter!!</h2>
         </div>
-        <div class="row" id="battle-ground">
-            <div class="col-md-4 m-3" id="your-char"></div>
-            <div class="col-md-4 m-3" id="enemy-char"></div>
-
+        <div class="row m-2 justify-content-center" id="battle-ground"></div>
+        <div class="row m-1" id="battle-actions"></div>
+        <div class="card">
+            <div class="card-body">
+                <p id="firstLine">Damage dealt by you</p>
+                <p id="secondLine">Dame dealt by opponent</p>
+                <p id="thirdLine">Win or lose?</p>
+            </div>
         </div>
+        <div class="row m-2" id="end-game"></div>
+        
     </div>
     <!-- useful link on moving objects with jQuery:
         https://www.elated.com/jquery-removing-replacing-moving-elements/ 
