@@ -36,7 +36,7 @@ var docEva = {
     hp: 480,
     baseAttack: 60,
     attackJump: 40,
-    counter: 20
+    counter: 30
 };
 
 var Greedo = {
@@ -44,14 +44,14 @@ var Greedo = {
     hp: 390,
     baseAttack: 80,
     attackJump: 40,
-    counter: 30
+    counter: 35
 };
 
 var Ponda = {
     fullName: "Ponda Baba",
     hp: 550,
     baseAttack: 120,
-    attackJump: 30,
+    attackJump: 10,
     counter: 40
 };
 
