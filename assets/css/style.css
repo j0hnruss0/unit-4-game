@@ -24,3 +24,29 @@ body {
     width: 120%;
 }
 
+@media screen and (max-width: 700px) {
+    .fighter,
+    .ally,
+    .your-enemy {
+        width: 50%;
+    }
+
+    #page-logo {
+        font-size: 25px;
+    }
+
+    body {
+        position: relative;
+        background-repeat: repeat-y;
+        background-size: 120%;
+    }
+
+    .container,
+    .back-drop,
+    .row,
+    .card {
+        width: 80%;
+    }
+
+}
+
